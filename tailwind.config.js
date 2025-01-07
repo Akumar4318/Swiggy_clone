@@ -16,7 +16,7 @@ export default {
       "gilory":['Gilory'],
       "giloryBlack":['Giloryblack'],
       "giloryHeavy":['GiloryHeavy'],
-      'giloryLight':['Gilorylight'],
+      'GilorysemiBold':['GilorysemiBold'],
       "giloryExtraBold":['Giloryextrabold'],
       'gilorymedium':['Gilorymedium'],
     }
