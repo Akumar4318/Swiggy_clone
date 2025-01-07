@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+    font-family: 'Gilory';
+    src: url('./Static/Fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+    font-family: 'GiloryHeavy';
+    src: url('./Static/Fonts/Gilroy-Heavy.ttf');
+    
+    
+}
+@font-face {
+    font-family: "Giloryblack";
+    src: url('./Static/Fonts/Gilroy-Black.ttf');
+}
+@font-face {
+    font-family: 'Gilorylight';
+    src: url('./Static/Fonts/Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Giloryextrabold';
+    src: url('./Static/Fonts/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilorymedium';
+    src: url('./Static/Fonts/Gilroy-Medium.ttf');
+}
+
+
+@tailwind utilities;
+
+.slick-slide > div{
+    margin: 25px;
+    
+}

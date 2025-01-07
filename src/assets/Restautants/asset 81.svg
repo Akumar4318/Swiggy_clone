@@ -1,0 +1,10 @@
+<svg class="hk-ext__pulse-svg" version="1.1" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
+						<circle class="hk-ext__circle hk-ext__first-circle" cx="29" cy="29" opacity="0" r="25"/>
+						<circle class="hk-ext__circle hk-ext__second-circle" cx="29" cy="29" opacity="0" r="25">
+						</circle>
+						<circle class="hk-ext__circle hk-ext__third-circle" cx="29" cy="29" opacity="0" r="25"/>
+						<g>
+							<circle cx="29" cy="29" r="29"/>
+							<path d="M37.0171132,8 L15,27.6897228 L26.7948821,30.8400784 L20.5042783,50.5298012 L42.5213915,28.4773117 L32.2991604,24.5393671 L37.0171132,8 L37.0171132,8 Z" fill="#FFFFFF"/>
+						</g>
+					</svg>
