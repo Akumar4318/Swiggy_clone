@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
 import { CloudinaryURL } from "../Utils/Link";
 import ratingImg from "../assets/Restautants/asset 67.svg";
 
-const Card = ({ name, img, time, area, rating, cuisines = [] }) => {
+const Card = ({ name, img, time, area, rating, cuisines,id = [] }) => {
+    
   return (
+    <Link to={`/menu/${id}`}>
     <div className="card-container flex flex-col items-center bg-white shadow-lg rounded-3xl overflow-hidden w-full max-w-[330px] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
       <div className="card-image relative w-full h-[200px]">
         <img
@@ -31,6 +34,7 @@ const Card = ({ name, img, time, area, rating, cuisines = [] }) => {
         <p className="area text-sm text-gray-500 mt-1">{area || "N/A"}</p>
       </div>
     </div>
+    </Link>
   );
 };
 

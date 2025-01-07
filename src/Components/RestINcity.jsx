@@ -17,6 +17,7 @@ const RestINcity = ({ data }) => {
               cuisines={item.info.cuisines}
               area={item.info.areaName}
               time={item.info.sla.slaString}
+              id={item.info.id}
             />
           ))}
       </div>

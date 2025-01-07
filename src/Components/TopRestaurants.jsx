@@ -71,6 +71,7 @@ const TopRestaurants = ({ data }) => {
       >
         {data.map((item) => (
           <div key={item.info.id} className=""> {/* Add padding for spacing */}
+         
             <Card
               name={item.info.name}
               rating={item.info.avgRating}
@@ -78,6 +79,7 @@ const TopRestaurants = ({ data }) => {
               cuisines={item.info.cuisines}
               area={item.info.areaName}
               time={item.info.sla.slaString}
+              id={item.info.id}
             />
           </div>
         ))}

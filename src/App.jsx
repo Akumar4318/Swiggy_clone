@@ -13,7 +13,7 @@ import Restautants from "./Components/Reasturant"
 import Instamart from "./Components/OtherCompany/Instamart"
 import Dineout from "./Components/OtherCompany/Dineout"
 import Genie from "./Components/OtherCompany/Genie"
-
+import Menu from "./Components/Menu"
 
 
 
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="/Instamart" element={<Instamart/>}/>
           <Route path="/Dineout" element={<Dineout/>}/>
           <Route path="/Genie" element={<Genie/>}/>
+          <Route path="/menu/:id" element={<Menu/>}></Route>
           
          
 
