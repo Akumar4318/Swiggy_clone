@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import deals from '../assets/deals/deal-of-day.avif'
 import flat from '../assets/deals/flat.avif'
 import { CiSearch } from "react-icons/ci";
 import logo from '../assets/Restautants/asset 67.svg'
 import Navbar from "./Navbar"
 import SubMenu from "./SubMenu";
+import Search from "./Search";
 
 const Menu = () => {
 const[menuData,setMenuData]=useState()
  const{id}=useParams() 
-
+ const navSearch=useNavigate()
  
  useEffect(()=>{
     
@@ -104,12 +105,14 @@ const[menuData,setMenuData]=useState()
                 </p>
             </div>
  {/* menu Input */}
-<Link>
-<button className="flex items-center justify-center w-full h-[47px] font-GilorysemiBold text-[#dd3] opacity-20 bg-black rounded-xl gap-4">
+
+<button onClick={()=>{
+    navSearch('/Search')
+}} className="flex items-center justify-center w-full h-[47px] font-GilorysemiBold text-[#dd3] opacity-20 bg-black rounded-xl gap-4 hover:opacity-35">
     Search for Dishes   <p className='text-[#dd3] text-[30px] w-[5px] '> <CiSearch /> </p>
 </button>
 
-</Link>
+
 
 {/* SUbmenu */}
 
