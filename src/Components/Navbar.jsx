@@ -17,6 +17,7 @@ const Navbar = () => {
   const navswiggyCorporate = useNavigate();
   const navOffer = useNavigate();
   const navCart = useNavigate();
+  const navApp=useNavigate()
 
   return (
     <div>

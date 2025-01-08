@@ -5,7 +5,6 @@ import { CloudinaryURL } from '../Utils/Link';
 
 const MenuCard = ({ name, isveg, desc, price, imageid }) => {
 
-    c
   return (
     <>
       <div className="flex items-start justify-between p-4 mx-2 border-b border-gray-300">

@@ -5,10 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+import { useNavigate } from "react-router-dom";
+
 
 const Craousel = ({data}) => {
   
     // let data=props.data
+
+    const nav=useNavigate()
 
     const settings = {
         dots: false,
@@ -35,7 +39,14 @@ const Craousel = ({data}) => {
         }} className=''>
             <Slider {...settings}>
             {data && data.map((item) => {
-                return <img key={item.id} className='h-[250px] w-[360px]' src={CloudinaryURL + item.imageId} />
+              
+              let str=item.action.link.split("?")[0].slice(35);
+             
+                return(
+                <img onClick={()=>{
+                    nav(`/craouselRestourent/${str}`)
+                   }} key={item.id} className='h-[250px] w-[360px] cursor-pointer' src={CloudinaryURL + item.imageId} />
+                )
             })}
             </Slider>
         </div>

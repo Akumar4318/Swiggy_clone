@@ -1,0 +1,70 @@
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    margin-top: 100px;
+    
+  }
+  
+  .shimmer-card {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 9 2px 8px rgba(0, 0, 0, .1);
+  }
+  
+  .shimmer-image {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    background: linear-gradient(
+      to left,
+      #e0e0e0 1%,
+      #f8f8f8 50%,
+      #e0e0e0 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2.5s infinite;
+  }
+  
+  .shimmer-text {
+    height: 16px;
+    border-radius: 4px;
+    background: linear-gradient(
+      to left,
+      #e0e0e0 0%,
+      #f8f8f8 50%,
+      #e0e0e0 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  .shimmer-title {
+    width: 80%;
+  }
+  
+  .shimmer-subtitle {
+    width: 60%;
+  }
+  
+  .shimmer-location {
+    width: 40%;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  

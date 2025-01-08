@@ -19,6 +19,8 @@ export default {
       'GilorysemiBold':['GilorysemiBold'],
       "giloryExtraBold":['Giloryextrabold'],
       'gilorymedium':['Gilorymedium'],
+      'NovaRegular':['ProximaNovaRegular'],
+      'Novabold':['ProximaNovaBold']
     }
   },
   plugins: [],

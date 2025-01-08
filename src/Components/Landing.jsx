@@ -21,6 +21,7 @@ const Landing = () => {
     const navInsta=useNavigate()
     const navDineout=useNavigate()
     const navGenie=useNavigate()
+    const navApp=useNavigate()
 
   return (
     <div  className="bg-[#ed5325] h-auto   ">
@@ -35,7 +36,7 @@ const Landing = () => {
             nav("/swiggycorporate")
            }} >Partner with us</p>
           <div  className='py-[12px] px-[16px] rounded-xl w-[149px] h-[53px] border  border-white  font-giloryBlack flex'>
-          <button className='flex items-center gap-x-2'>Get the App <MdArrowOutward  className=''/></button>
+          <a href="https://play.google.com/store/apps/details?id=in.swiggy.android&hl=en_IN&pli=1"><button className='flex items-center gap-x-2'>Get the App <MdArrowOutward  className=''/></button></a>
           </div>
            <button className='py-[12px] px-[16px] rounded-xl w-[130px] h-[50px]  font-giloryBlack bg-black'>Sign in</button>
         </div>

@@ -14,6 +14,8 @@ import Instamart from "./Components/OtherCompany/Instamart"
 import Dineout from "./Components/OtherCompany/Dineout"
 import Genie from "./Components/OtherCompany/Genie"
 import Menu from "./Components/Menu"
+import CraouselRest from "./Components/CraouselRest"
+
 
 
 
@@ -35,11 +37,12 @@ const App = () => {
           <Route path="/Dineout" element={<Dineout/>}/>
           <Route path="/Genie" element={<Genie/>}/>
           <Route path="/menu/:id" element={<Menu/>}></Route>
-          
-         
+          <Route path="/craouselRestourent/:id" element={<CraouselRest/>}></Route>
+
+
 
         </Routes>
-  
+
     
     </div>
   )

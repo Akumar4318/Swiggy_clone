@@ -28,6 +28,15 @@
     font-family: 'Gilorymedium';
     src: url('./Static/Fonts/Gilroy-Medium.ttf');
 }
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('./Static/Fonts/Fontspring-DEMO-proximanova-bold.otf');
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('./Static/Fonts/Fontspring-DEMO-proximanova-regular.otf');
+}
 
 
 @tailwind utilities;

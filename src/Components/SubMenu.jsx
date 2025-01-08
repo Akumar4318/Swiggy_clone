@@ -57,7 +57,7 @@ const SubMenu = ({ title, items }) => {
                       {item.itemCards &&
                         item.itemCards.map((subItem, subIndex) => (
                          <div key={subIndex}>
-                             <MenuCard name={subItem.card.info.name} isveg={subItem.card.info.itemAttribute.vegClassifier} desc={subItem.card.info.description} price={subItem.card.info.defaultPrice/100} imageid={subItem.card.info.imageId}/>
+                             <MenuCard name={subItem.card.info.name} isveg={subItem.card.info.itemAttribute.vegClassifier} desc={subItem.card.info.description} price={subItem.card.info.price ? subItem.card.info.price/100:item.card.info.defaultPrice/100}  imageid={subItem.card.info.imageId}/>
 
                              
                          </div>
