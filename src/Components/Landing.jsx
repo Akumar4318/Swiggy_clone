@@ -57,7 +57,7 @@ const Landing = () => {
                 <div className='flex  rounded-xl  gap-x-2 w-[301px] h-[59px] bg-white items-center  px-3'> 
                     <p className='text-[#ff5200] w-[5px]'><FaLocationDot /></p>
 
-                    <input type="text" name="" id="" placeholder='Enter you location' className='bg-white border-none font-giloryLight text-gray-500 ml-3' />
+                    <input type="text" name="" id="" placeholder='Enter you location' className='bg-white border-none font-giloryLight text-gray-500 ml-3 focus:outline-none focus:ring-0 ' />
 
                     <p className='text-black text-[20px] w-[5px]'> <FaChevronDown /></p>
                      </div>
@@ -66,7 +66,7 @@ const Landing = () => {
 
                 <div className='flex  rounded-lg  gap-x-2  2 w-[500px] h-[59px] bg-white items-center  px-3 justify-around  '>  
 
-                <input type="text" name="" id="" placeholder='Search for restaurant, item or more' className='bg-white font-giloryLight text-gray-500 ml-3 w-[276px] h-[24px] ' />
+                <input type="text" name="" id="" placeholder='Search for restaurant, item or more' className='bg-white focus:outline-none focus:ring-0  font-giloryLight text-gray-500 ml-3 w-[276px] h-[24px] ' />
 
                 <p className='text-black text-[30px] w-[5px] '> <CiSearch /> </p>
                                 </div>
