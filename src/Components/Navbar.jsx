@@ -8,6 +8,7 @@ import Help from '../assets/Restautants/help.svg';
 import signin from '../assets/Restautants/signIn.svg';
 import cart from '../assets/Restautants/cart.svg';
 import { FaChevronDown } from "react-icons/fa6";
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
   const [currentSection, setCurrentSection] = useState('Other');
@@ -18,6 +19,10 @@ const Navbar = () => {
   const navOffer = useNavigate();
   const navCart = useNavigate();
   const navApp=useNavigate()
+
+  let cartdata=useSelector((state)=>
+   state.cart
+  )
 
   return (
     <div>
@@ -66,8 +71,15 @@ const Navbar = () => {
                 <img src={signin} alt="" className='w-[19px] h-[19px]' />
                 <li className='font-gilory'>Sign</li>
               </div>
-              <div onClick={() => navCart('/Cart')} className='flex h-full items-center justify-center gap-x-2 hover:text-darkOrange cursor-pointer'>
-                <img src={cart} alt="" className='w-[19px] h-[19px]' />
+              <div  onClick={() => navCart('/Cart')} className='flex h-full  items-center justify-center gap-x-2 hover:text-darkOrange cursor-pointer'>
+               <div className='flex relative '>
+               <img src={cart} alt="" className='w-[25px] h-[25px] ' />
+               <div className='w-[20px] h-[20px] bg-darkOrange rounded-full absolute -top-2 left-0.5 text-white' >
+                <div className='flex justify-center items-center font-giloryExtraBold text-sm'>
+                 {cartdata.length}
+                </div>
+               </div>
+               </div>
                 <li className='font-gilory'>Cart</li>
               </div>
             </ul>

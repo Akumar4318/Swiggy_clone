@@ -1,9 +1,13 @@
 import veg from '../assets/vegNonveg/veg.png';
 import nonveg from '../assets/vegNonveg/nonveg.jpg';
 import { CloudinaryURL } from '../Utils/Link';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../Features/CartSlice';
 
 
 const MenuCard = ({ name, isveg, desc, price, imageid }) => {
+
+  const dispatch=useDispatch()
 
   return (
     <>
@@ -29,7 +33,9 @@ const MenuCard = ({ name, isveg, desc, price, imageid }) => {
             alt={name}
             className="rounded-xl object-cover w-full h-24"
           />
-          <button className="absolute bottom-[-25px] right-[4rem] w-[118px] h-[38px] px-3 py-1 text-[#1ba672] border border-green-600 rounded-xl font-giloryExtraBold bg-white shadow-lg">
+          <button onClick={()=>{
+            dispatch(addToCart({name,price,imageid,isveg}))
+          }}  className="absolute bottom-[-25px] right-[4rem] w-[118px] h-[38px] px-3 py-1 text-[#1ba672] border border-green-600 rounded-xl font-giloryExtraBold bg-white shadow-lg">
             ADD
           </button>
         </div>
